@@ -1,0 +1,51 @@
+/**/
+
+
+.pubs-list {
+    /*list-style: none; */    
+    font-size:14px;
+}
+
+.pubs-list span {  
+    margin:2px;
+    /*display:inline-block;*/   
+}
+
+.pubs-title {
+    font-size: 16px;
+}
+
+.pubs-authors, pubs-author {
+    font-style   : italic;
+	text-overflow: ellipsis;
+    overflow     : hidden;
+}
+
+.pubs-authors:before {
+    /*
+    content: "by ";
+    font-weight:bold;
+    */
+}
+
+/*.pubs-in:before, .pubs-in-short:before { content: ""; }*/
+.pubs-in:after , .pubs-in-short:after  { content: ","; }
+
+.pubs-date:before {content:"none";}
+
+
+
+/* Generic Styles */
+.rate:after{content:"/5";}
+
+.date:before {content:"(";}
+.date:after   {content:")";}
+.date{ font-style:italic;}
+
+.title { font-weight:bold; }
+
+.description {
+	display      : block; 
+	text-align   : justify;
+    /*white-space  : nowrap;*/
+}
