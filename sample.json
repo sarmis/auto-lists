@@ -1,0 +1,12 @@
+[    
+    { 
+        "title": "First Item",
+        "descr": "This is the first item"
+    },{
+        "title":{"text":"Second item", "url":"http://www.in.gr"},
+        "descr":"this is the second item"
+    },{
+        "title":{"text":"Third item"},
+        "descr":{"text":"Links can be placed anywhere", "url":"http://www.in.gr"}
+    }
+ ]
