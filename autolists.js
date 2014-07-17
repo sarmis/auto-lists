@@ -18,12 +18,12 @@ function CreateSpan(Key, Data, ClassesPrefix) {
     if (typeof Data === 'object') {
 
         if (Data.url) {
-            jQuery("<a></a>").attr("href", Data.url).text(Data.text).appendTo(span);
+            jQuery("<a></a>").attr("href", Data.url).html(Data.text).appendTo(span);
         } else {
-            span.text(Data.text);
+            span.html(Data.text);
         }
     } else {
-        span.text(Data);
+        span.html(Data);
     }
 
     return span;
@@ -32,7 +32,9 @@ function CreateSpan(Key, Data, ClassesPrefix) {
 // Creates the auto-list on the <aListElement>
 function CreateAutoList(ListElement, ClassesPrefix, ItemsToRender ) {
     
+	ListElement.empty();
 	ListElement.addClass('al-list'); 
+	
     
     jQuery.getJSON(ListElement.attr("data-source"), function (data) {
         for (var i = 0; i < data.length; i++) {
@@ -52,7 +54,11 @@ function CreateAutoList(ListElement, ClassesPrefix, ItemsToRender ) {
 				}
             }
             listItem.appendTo(ListElement);
-        }
+        }			
+		
+		jQuery('.stars').each(function(i) {jQuery(this).html('<img src="/stars/' + jQuery(this).text() + 'S.png">')});
     });
+	
+	
 }
 

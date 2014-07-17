@@ -36,6 +36,12 @@
 
 
 /* Generic Styles */
+
+.stars img {
+	vertical-align: text-top;
+	height:16px;
+}
+
 .rate:after{content:"/5";}
 
 .date:before {content:"(";}

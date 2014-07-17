@@ -1,12 +1,15 @@
 [    
     { 
         "title": "First Item",
+		"stars":5,
         "descr": "This is the first item"
     },{
         "title":{"text":"Second item", "url":"http://www.in.gr"},
+		"stars":4,
         "descr":"this is the second item"
     },{
         "title":{"text":"Third item"},
+		"stars":2,
         "descr":{"text":"Links can be placed anywhere", "url":"http://www.in.gr"}
     }
  ]
