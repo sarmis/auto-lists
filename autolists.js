@@ -55,8 +55,9 @@ function CreateAutoList(ListElement, ClassesPrefix, ItemsToRender ) {
             }
             listItem.appendTo(ListElement);
         }			
-		
-		jQuery('.stars').each(function(i) {jQuery(this).html('<img src="/stars/' + jQuery(this).text() + 'S.png">')});
+		jQuery('.' + ClassesPrefix + 'stars').each( function(i) {				
+			jQuery(this).html('<img src="/stars/' + jQuery(this).text() + 'S.png">')
+		});		
     });
 	
 	
